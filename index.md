@@ -1,4 +1,4 @@
-# Computer Science 4375  |  Fall 2022  |  UT Dallas  |  Charles Wallis
+# Charles Wallis | Machine Learning
 
 ### Index:
 
