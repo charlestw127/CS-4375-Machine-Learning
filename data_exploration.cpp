@@ -125,7 +125,7 @@ int main() {
     //initialize rm, medv, and set filename
     vector<double> rm;
     vector<double> medv;
-    string filename = "Boston.txt";
+    string filename = "Boston.csv";
 
     //store rm and medv data from the file into vectors, while counting num of records
     int numObservations = readFile(filename, rm, medv);
