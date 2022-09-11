@@ -3,12 +3,12 @@
 //September 10, 2022
 
 #include <iostream>
-#include <string>
 #include <fstream>
-#include <vector>
 #include <sstream>
-#include <algorithm>
+#include <string>
+#include <vector>
 #include <cmath>
+#include <algorithm>
 
 using namespace std;
 
