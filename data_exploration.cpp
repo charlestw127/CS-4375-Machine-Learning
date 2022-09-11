@@ -1,6 +1,6 @@
 //Charles Wallis, University of Texas at Dallas
 //Data Exploration 
-//September 10, 2022
+//September 11, 2022
 
 #include <iostream>
 #include <fstream>
@@ -13,6 +13,7 @@
 using namespace std;
 
 int readFile(string filename, vector<double> &rm, vector<double> &medv){
+    //initialize
     string line;
     string rmRead;
     string medvRead;
@@ -22,23 +23,28 @@ int readFile(string filename, vector<double> &rm, vector<double> &medv){
     //validate file open
     if(!inFile.is_open()){cout<<"Could not open input file "<<filename<<endl;}
 
-    //read first line
+    //read first line, Header
     getline(inFile, line);
+    cout << " Header: " << line << endl;
 
     //read lines
     while(getline(inFile, line)){
         stringstream ss(line);
+        
+        //split the two values
         getline(ss, rmRead, ',');
         getline(ss, medvRead);
+        
+        //enter values in vector
         rm.push_back(stof(rmRead));
         medv.push_back(stof(medvRead));
-        numObservations++;
+        numObservations++;      //increment number of records
     }//split rm and medv read data in two vectors
-    
-    return numObservations;
     
     //close file
     inFile.close();
+    
+    return numObservations;
 }//read file, input rm and medv
 
 
@@ -74,18 +80,25 @@ double calcMedian(vector<double> v){
 }//calculate median
 
 
-double calcRange(vector<double> v){
+double calcMax(vector<double> v){
     double max = 0;
-    double min = 10000000;
     //loop vector
     for(int i=0; i < v.size(); i++){
         //find max
         if(v[i] > max){max = v[i];}
+    }//set max
+    return max;
+}//calculate range
+
+double calcMin(vector<double> v){
+    double min = 10000000;
+    //loop vector
+    for(int i=0; i < v.size(); i++){
         //find min
         if(v[i] < min){min = v[i];}
-    }//set min and max
-    return max - min;
-}//calculate range
+    }//set min
+    return min;
+}//calculate min
 
 
 double calcCovariance(vector<double> rm, vector<double> medv){
@@ -125,28 +138,28 @@ int main() {
     //initialize rm, medv, and set filename
     vector<double> rm;
     vector<double> medv;
-    string filename = "Boston.csv";
+    string filename = "Boston.txt";
 
     //store rm and medv data from the file into vectors, while counting num of records
     int numObservations = readFile(filename, rm, medv);
-
-    cout << "Number of Records: " << numObservations << endl;
+    
+    cout << " Number of Records: " << numObservations << endl;
     //stats for rm
-    cout << "|=====RM Stats=====|\n";
-    cout << "|Sum    : " << calcSum(rm) << endl;
-    cout << "|Mean   : " << calcMean(rm) << endl;
-    cout << "|Median : " << calcMedian(rm) << endl;
-    cout << "|Range  : " << calcRange(rm) << endl;
+    cout << "\n| === RM Stats === |\n";
+    cout << "    Sum: " << calcSum(rm) << endl;
+    cout << "   Mean: " << calcMean(rm) << endl;
+    cout << " Median: " << calcMedian(rm) << endl;
+    cout << "  Range: [" << calcMin(rm) << " - " << calcMax(rm) << "]" << endl;
     
     //stats for medv
-    cout << "|====MEDV Stats====|\n";
-    cout << "|Sum    : " << calcSum(medv) << endl;
-    cout << "|Mean   : " << calcMean(medv) << endl;
-    cout << "|Median : " << calcMedian(medv) << endl;
-    cout << "|Range  : " << calcRange(medv) << endl;
-
+    cout << "\n| == MEDV Stats == |\n";
+    cout << "    Sum: " << calcSum(medv) << endl;
+    cout << "   Mean: " << calcMean(medv) << endl;
+    cout << " Median: " << calcMedian(medv) << endl;
+    cout << "  Range: [" << calcMin(medv) << " - " << calcMax(medv) << "]" << endl;
+    
     //covariance and correlation
-    cout << "|=====RM and MEDV====|\n";
-    cout << "|Covariance  : " << calcCovariance(rm, medv) << endl;
-    cout << "|Correlation : " << calcCorrelation(rm, medv) << endl;
-}
+    cout << "\n| === RM and MEDV === |\n";
+    cout << "  Covariance: " << calcCovariance(rm, medv) << endl;
+    cout << " Correlation: " << calcCorrelation(rm, medv) << endl;
+}   //main driver
