@@ -1,5 +1,5 @@
 # Charles Wallis
-This is a Course Repository for CS 4375, Portfolio Projects created for Machine Learning
+This is a Course Repository for CS 4375, with Portfolio Projects created for Machine Learning
 
 ### Index:
 
