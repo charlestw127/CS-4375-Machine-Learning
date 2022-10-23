@@ -13,4 +13,4 @@ This is a Course Repository for CS 4375, with Portfolio Projects created for Mac
 
 * Portfolio Component 4: Searching for Similarity: [Regression](https://github.com/SerratedGraph77/CS-4374-Intro-to-Machine-Learning/blob/main/Regression2%201.pdf) | [Classification](https://github.com/charlestw127/Machine-Learning-Portfolio/blob/main/Classfication.pdf) | [Clustering](https://github.com/charlestw127/Machine-Learning-Portfolio/blob/main/Clustering.pdf) | [Dimensionality Reduction](https://github.com/charlestw127/Machine-Learning-Portfolio/blob/main/dimensionality-reduction.pdf) | [Narrative](https://github.com/charlestw127/Machine-Learning-Portfolio/blob/main/Narrative.pdf)
 
-* Portfolio Component 5: Kernels and Ensemble Models [SVM Regression] | [SVM Classification] | [Ensemble Techniques] | [Narrative]
+* Portfolio Component 5: Kernels and Ensemble Models [SVM Regression](https://github.com/charlestw127/Machine-Learning-Portfolio/blob/main/SVM-regression.pdf) | [SVM Classification] | [Ensemble Techniques] | [Narrative]
