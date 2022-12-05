@@ -17,4 +17,4 @@ This is a Course Repository for Charles Wallis, with Portfolio Projects created 
 
 * Portfolio Component 6: Machine Learning using Sci Kit Learn: [Notebook](https://github.com/charlestw127/Machine-Learning-Portfolio/blob/main/ML%20Using%20sklearn.pdf)
 
-* Portfolio Component 7: Image Classification: [Dog Breed Identification] | [Narrative](https://github.com/charlestw127/Machine-Learning-Portfolio/blob/main/Image%20Classification.pdf)
+* Portfolio Component 7: Image Classification: [Dog Breed Identification] | [Narrative](https://github.com/charlestw127/Machine-Learning-Portfolio/blob/main/Image%20Classification%20(1).pdf)
