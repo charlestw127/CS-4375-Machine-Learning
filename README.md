@@ -16,3 +16,5 @@ This is a Course Repository for Charles Wallis, with Portfolio Projects created 
 * Portfolio Component 5: Kernels and Ensemble Models: [SVM Regression](https://github.com/charlestw127/Machine-Learning-Portfolio/blob/main/SVM-regression.pdf) | [SVM Classification](https://github.com/charlestw127/Machine-Learning-Portfolio/blob/main/SVM-classification.pdf) | [Ensemble Techniques](https://github.com/charlestw127/Machine-Learning-Portfolio/blob/main/EnsembleMethods.pdf) | [Narrative](https://github.com/charlestw127/Machine-Learning-Portfolio/blob/main/Kernel%20and%20Ensemble%20Methods.pdf)
 
 * Portfolio Component 6: Machine Learning using Sci Kit Learn: [Notebook](https://github.com/charlestw127/Machine-Learning-Portfolio/blob/main/ML%20Using%20sklearn.pdf)
+
+* Portfolio Component 7: Image Classification: [Dog Breed Identification] | [Narrative](https://github.com/charlestw127/Machine-Learning-Portfolio/blob/main/Image%20Classification.pdf)
